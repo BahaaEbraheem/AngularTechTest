@@ -1,0 +1,46 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html dir="ltr" lang="ar">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/favicon.ico">
+
+
+    @Styles.Render("~/Content/css")
+
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquery_ui")
+
+    @Scripts.Render("~/bundles/javascript")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/hover.css" rel="stylesheet" />
+    <link href="~/Content/Share_Style.css" rel="stylesheet" />
+
+    <link href="~/Scripts/toastr.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/dirPagination.js"></script>
+</head>
+<body>
+    <div id="globalModalContainer"></div>
+
+    <div class="container-fluid body-content" style="margin-top:0;">
+            @RenderBody()
+    </div>
+    <footer class="text-center">
+    </footer>
+    @RenderSection("scripts", required: false)
+
+
+</body>
+
+</html>

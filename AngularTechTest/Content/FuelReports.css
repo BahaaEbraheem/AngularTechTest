@@ -1,0 +1,108 @@
+﻿ body:not(.dt-print-view) {
+        padding-top: 0;
+    }
+    /* custom inclusion of right, left and below tabs */
+    .tabs-below > .nav-tabs,
+    .tabs-right > .nav-tabs,
+    .tabs-left > .nav-tabs {
+        border-bottom: 0;
+    }
+
+    .tab-content > .tab-pane,
+    .pill-content > .pill-pane {
+        display: none;
+    }
+
+    .tab-content > .active,
+    .pill-content > .active {
+        display: block;
+    }
+
+    .tabs-below > .nav-tabs {
+        border-top: 0px solid #ddd;
+    }
+
+        .tabs-below > .nav-tabs > li {
+            margin-top: 0px;
+            margin-bottom: 0;
+        }
+
+            .tabs-below > .nav-tabs > li > a {
+                -webkit-border-radius: 0 0 4px 4px;
+                -moz-border-radius: 0 0 4px 4px;
+                border-radius: 0 0 4px 4px;
+            }
+
+                .tabs-below > .nav-tabs > li > a:hover,
+                .tabs-below > .nav-tabs > li > a:focus {
+                    border-top-color: #ddd;
+                    border-bottom-color: transparent;
+                    outline: none;
+                }
+
+        .tabs-below > .nav-tabs > .active > a,
+        .tabs-below > .nav-tabs > .active > a:hover,
+        .tabs-below > .nav-tabs > .active > a:focus {
+            border-color: transparent #ddd #ddd #ddd;
+            border-bottom: 5px solid #163bcb;
+            border-bottom-color: rgb(22, 59, 203);
+            border-left: 3px solid #163bcb;
+            border-left-color: rgb(22, 59, 203);
+            border-right: 3px solid #163bcb;
+            border-right-color: rgb(22, 59, 203);
+            outline: none;
+        }
+
+    .tab-content {
+        border-bottom: 0;
+    }
+
+    .nav-tabs > li.active > a {
+        margin-right: 0px;
+    }
+    ul.nav-pills{
+        -webkit-box-shadow: inset 0 8px 5px rgba(0, 0, 0, 0.175), 0 0 6px #dbc59e !important;
+          box-shadow: inset 0 8px 5px rgba(0, 0, 0, 0.175), 0 0 6px #dbc59e !important;
+    }
+    ul.nav-tabs > li > a {
+        border-top: 0 solid transparent;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        outline: none;
+        transition: all ease-in-out .06s;
+    }
+
+        ul.nav-tabs > li > a:hover {
+            border-top: 0 solid #abdde5;
+            
+        }
+
+    .nav-pills > li > a {
+        border-radius: 0;
+    }
+
+        .nav-pills > li > a, .nav-pills > li > a:focus, .nav-pills > li > a:active {
+            outline: none;
+        }
+
+    .nav.nav-pills > li > a {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .nav-pills > li > a {
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+    }
+
+    .nav-pills > li.active > a.Sum1, .nav-pills > li.active > a.Sum1:hover, .nav-pills > li.active > a.Sum1:focus {
+        border-top: 4px solid #333;
+        border-bottom: 4px solid #333;
+        color:yellow !important;
+    }
+
+    .body-content {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+    }

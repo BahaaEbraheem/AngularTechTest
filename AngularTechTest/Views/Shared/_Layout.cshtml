@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="ar">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/favicon.ico">
+
+    <link rel="stylesheet" href="~/Content/ligne.css">
+    <link rel="stylesheet" href="~/Content/paginate.css">
+    <script type="text/javascript" src="~/Scripts/paginate.js"></script>
+    <script type="text/javascript" src="~/Scripts/paginate.min.js"></script>
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+ 
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/hover.css" rel="stylesheet" />
+</head>
+
+
+
+
+
+
+<body>
+    <div id="globalModalContainer"></div>
+
+    <div class="container-fluid body-content" style="margin-top:0;">
+
+
+        @RenderBody()
+    </div>
+
+    <footer class="text-center">
+    </footer>
+
+
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+
+</html>
