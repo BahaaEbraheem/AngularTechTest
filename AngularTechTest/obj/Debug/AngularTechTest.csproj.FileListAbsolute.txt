@@ -13,6 +13,6 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\AngularTechTest\AngularTech
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\AngularTechTest\AngularTechTest\bin\AngularTechTest.dll.config
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\AngularTechTest\AngularTechTest\bin\AngularTechTest.dll
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\AngularTechTest\AngularTechTest\bin\AngularTechTest.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\AngularTechTest\AngularTechTest\obj\Debug\AngularTechTest.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\AngularTechTest\AngularTechTest\obj\Debug\AngularTechTest.dll
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\AngularTechTest\AngularTechTest\obj\Debug\AngularTechTest.pdb
-C:\Users\Admin\Documents\Visual Studio 2015\Projects\AngularTechTest\AngularTechTest\obj\Debug\AngularTechTest.csprojResolveAssemblyReference.cache
