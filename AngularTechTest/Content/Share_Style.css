@@ -1,79 +1,4 @@
-﻿.form-horizontal .form-group {
-    margin-right: 5%;
-    margin-left: 2%;
-}
-       select {
-    height: 100px;
-    color: red;
-}
-  .modal {
-   width: 300px;
-   height: 300px;
-   position: absolute;
-   left: 50%;
-   top: 50%; 
-   margin-left: -150px;
-   margin-top: -150px;
-}
-  .modal-dialog {
-  height: 80% !important;
-  padding-top:10%;
-}
-
-.modal-content {
-  height: 100% !important;
-  overflow:visible;
-}
-
-.modal-body {
-  height: 80%;
-  overflow: auto;
-}
-       h3, .h3 {
-    font-size: 27px;
-        line-height: 1.1;
- 
-    margin-top: 22px;
-    margin-bottom: 17px;
-    margin-left: 17px;
-      margin-right: 17px;
-}
-
-jumbotron h1 {
-    line-height: 0;
-    color: inherit;
-}
-clsban
-span {
-    font-size:large;
-}
-.hvr-curl-top-left {
-    display: table-row;
-}
-.hvr-box-shadow-outset {
-    display: block;
-padding-bottom: inherit;
-/*padding-bottom: 10px;padding-top: 10px;margin-bottom: 0;*/
-    padding-top: 1%;
-    margin-bottom: 0;
-    font-family:Courier New
-}
-.body-content {
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-top: 0%;
-}
-.lb-lg {
-    font-size: large;
-    margin-left: 1%;
-}
-
-.btn {
-    font-size: large;
-   
-}
-
-.table th, tbody,tfoot {
+﻿.table th, tbody,tfoot {
     text-align: center;
     font-size: large;
 }
@@ -90,17 +15,10 @@ label {
     padding: 0px 16px;
 }
 .form-control {
-   display: unset;
     height:80%;
     font-size: large;
     color: black;
 }
-/*.panel-heading {
-  padding: 26%;
-  border-bottom: 1% solid transparent;
-  border-top-right-radius: 3%;
-  border-top-left-radius: 3%;
-}*/
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;

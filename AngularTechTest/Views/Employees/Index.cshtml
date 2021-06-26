@@ -4,72 +4,76 @@
 }
 <body>
     <div data-ng-app="myApp" data-ng-controller="EmpCtrl">
-                <div id="item-modal" class="modal" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" style="text-align: center;
-                        font-size: large;">New Salary</h4>
-                            </div>
-                            <div class="modal-body">
-                                <table class="table table-bordered">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Department</th>
-                                            <th>Salary</th>
-                                            <th>New Salary</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="myTable table hover">
-                                        <tr>
-                                            <td>{{currentItem.Name}}</td>
-                                            <td>{{currentItem.Department}}</td>
-                                            <td>{{currentItem.Salary}}</td>
-                                            <td><input class="form-control" type="number" name="vv" id="newSalary" value="" /></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-default" data-dismiss="modal" data-ng-click="Check(currentItem)">Save</button>
-                            </div>
-                        </div>
+        <div id="item-modal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content" style="text-align: center;
+                        font-size: large;">
+                    <div class="modal-header" style="text-align: center;
+                        font-size: large;">
+                        <h4 class="modal-title" style="text-align: center;
+                        font-size: large;">
+                            New Salary
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered">
+                           <thead class="thead-light">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Department</td>
+                                    <td>Salary</td>
+                                    <td>New Salary</td>
+                                </tr>
+                            </thead>
+                            <tbody class="table hover">
+                                <tr>
+                                    <td>{{currentItem.Name}}</td>
+                                    <td>{{currentItem.Department}}</td>
+                                    <td>{{currentItem.Salary}}</td>
+                                    <td><input class="form-control" type="number" name="vv" id="newSalary" value="" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default" data-dismiss="modal" data-ng-click="Check(currentItem)">Save</button>
                     </div>
                 </div>
-                <table id="Employee" class="table table-bordered border-primary">
-                    <thead class="thead-light">
-                        <tr  style="background-color:black;color:white">
-                            <th hidden></th>
-                            <th>Name</th>
-                            <th>Department</th>
-                            <th>Salary</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table hover">
-                        <tr data-ng-click="selectItem(emp)" data-ng-repeat="emp in employees">
-                            <td hidden>{{emp.Id}}</td>
-                            <td>{{emp.Name}}</td>
-                            <td>{{emp.Department}}</td>
-                            <td>{{emp.Salary}} </td>
-                        </tr>
-                    </tbody>
-                    <tfoot class="table hover">
-                        <tr>
-                            <td colspan="1" hidden> </td>
-                            <td colspan="2" class="ng-binding" style="text-align: center;
-                        font-size: large;background-color:darkgray ;font:bold">
-                                Sum of Salaries is
-                            </td>
-                            <td colspan="3" class="ng-binding" style="text-align: center;
-                        font-size: large; background-color:darkgray ; color:black;font:bold">
-                                {{getTotal()}}
-                            </td>
-                            <td colspan="4" hidden> </td>
-                        </tr>
-                    </tfoot>
-                </table>
             </div>
+        </div>
+        <table id="Employee" class="table table-bordered border-primary">
+            <thead class="thead-light">
+                <tr style="background-color:black;color:white">
+                    <th hidden></th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody class="table hover">
+                <tr data-ng-click="selectItem(emp)" data-ng-repeat="emp in employees">
+                    <td hidden>{{emp.Id}}</td>
+                    <td>{{emp.Name}}</td>
+                    <td>{{emp.Department}}</td>
+                    <td>{{emp.Salary}} </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="1" hidden> </td>
+                    <td colspan="2" class="ng-binding" style="text-align: center;
+                        font-size: large;background-color:darkgray ;font:bold">
+                        Sum of Salaries is
+                    </td>
+                    <td colspan="3" class="ng-binding" style="text-align: center;
+                        font-size: large; background-color:darkgray ; color:black;font:bold">
+                        {{getTotal()}}
+                    </td>
+                    <td colspan="4" hidden> </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
     <script>
         var app = angular.module('myApp', []);
         app.controller('EmpCtrl', function ($scope) {
@@ -96,7 +100,6 @@
             }
             $scope.Check = function (emp) {
                 debugger
-                //var x = $("#newSalary").val();
                 var x = document.getElementById('newSalary').value;
                 document.getElementById('newSalary').value = null;
                 var id = emp.Id;
@@ -106,9 +109,12 @@
                 }
                 else {
                     alert(" الرجاء تعبئة حقل الراتب الجديد")
-                    //return false;
                 }
             }
         });
     </script>
 </body>
+
+
+
+
